@@ -1,5 +1,7 @@
 export function absoluteValuesSumMinimization(a: number[]): number {
-    return 5;
+    const halfLength = a.length / 2
+    if (a.length % 2 !== 0) return a[Math.floor(halfLength)]
+    return a[halfLength - 1]
 }
 
 // console.log(absoluteValuesSumMinimization([2, 4, 7]));
