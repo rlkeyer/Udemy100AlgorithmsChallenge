@@ -1,7 +1,6 @@
 export function addBorder(picture: string[]): string[] {
     const strLen = picture[0].length
     picture.forEach((str, index) => {
-        console.log(index)
         const end = str.concat('', '*')
         picture[index] = '*'.concat('', end)
     })
