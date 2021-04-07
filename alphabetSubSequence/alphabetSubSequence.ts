@@ -1,5 +1,9 @@
 export function alphabetSubsequence(s: string): boolean {
-
+    // loop over s and make sure the next charCode is always greater than current charCode
+    for (let i = 0; i < s.length - 1; i++) {
+        if (s.charCodeAt(i) >= s.charCodeAt(i + 1)) return false
+    }
+    return true
 }
 
 console.log(alphabetSubsequence('zab'))
