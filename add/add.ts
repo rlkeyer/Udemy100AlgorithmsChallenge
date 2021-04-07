@@ -3,7 +3,7 @@ export function add(param1: number, param2: number): number {
 }
 
 export function add2(...param1: number[]): number {
-    
+    return param1.reduce((acc, num) => acc + num)
 }
 // console.log(add(1, 2));
 // console.log(add(3, 2));
