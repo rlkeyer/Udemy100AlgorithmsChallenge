@@ -21,8 +21,7 @@ export function chessBoardCellColor(cell1: string, cell2: string): boolean {
 
     console.log(cell1IsEven, cell2IsEven)
     
-    if (cell1IsEven === cell2IsEven) return true
-    return false
+    return cell1IsEven === cell2IsEven
 }
 
 console.log(chessBoardCellColor('A1', 'C3'));
